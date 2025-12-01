@@ -1,8 +1,11 @@
+import "module-alias/register.js";
 import express from "express";
 import path, { resolve } from "path";
 import { fileURLToPath, pathToFileURL } from "url";
 import fs from "fs";
 import cors from "cors";
+
+
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);

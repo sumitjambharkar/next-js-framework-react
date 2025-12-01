@@ -4,7 +4,6 @@ export async function POST(req,res) {
     const fakeRequest = {
       json: async () => req.body,
     };
-
     const result = await phoneSendOtpHandler(fakeRequest, {
       url: "https://oha.onehealthassist.com/api/", // trailing slash important
     });
